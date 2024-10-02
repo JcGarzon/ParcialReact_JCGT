@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import edicion from '../assets/edicion.png';
 import promocion from '../assets/promocion.png';
-
-
 const HabilidadesSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const habilidades = [
     {
       titulo: 'Habilidades Duras',
@@ -18,17 +15,14 @@ const HabilidadesSlider = () => {
       items: ['Comunicación y escucha activa', 'Planificación del tiempo', 'Adaptabilidad']
     }
   ];
-
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % habilidades.length);
   };
-
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? habilidades.length - 1 : prevIndex - 1
     );
   };
-
   return (
     <div className="Habilidades">
       <h2>Habilidades</h2>
@@ -53,5 +47,4 @@ const HabilidadesSlider = () => {
     </div>
   );
 };
-
 export default HabilidadesSlider;
