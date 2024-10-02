@@ -1,42 +1,197 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.encabezado header {
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+    overflow: hidden; 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.encabezado header img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    left: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.perfil {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 80px;
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.perfil img {
+    border-radius: 50%; 
+    max-width: 120px; 
+    height: auto; 
+    position: absolute;
+    top: -40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black; 
+    padding: 5px; 
+    box-shadow: 0px 0px 10px darkblue;
 }
 
-.card {
-  padding: 2em;
+.perfil img:hover{
+    background-color: #00A3FF; 
 }
 
-.read-the-docs {
-  color: #888;
+.perfil h1 {
+    margin-top: 100px;
+    margin: 0;
 }
+.perfil h1:hover{
+    color: #00A3FF;
+}
+.perfil p {
+    margin: 10px 0 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.Habilidades {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; 
+    justify-items: center;
+    text-align: center;
+    
+}
+.icono-habilidad {
+    display: block;
+    margin: 0 auto 10px auto; 
+    width: 50px; 
+    height: auto;
+}
+
+.Habilidad {
+
+    text-align: center;
+    
+}
+
+.Habilidad h3 {
+    color: #00A3FF;
+    text-shadow: 1px 1px 2px darkblue;
+}
+
+.Habilidad p {
+    line-height: 2;
+    margin: 5px 0;
+}
+
+.Habilidades h2 {
+    grid-column: span 2; 
+    color: #00A3FF;
+    text-shadow: 1px 1px 2px darkblue;
+}
+
+.Proyectos {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.Proyectos h2 {
+    color: #00A3FF;
+    text-shadow: 1px 1px 2px darkblue;
+    margin-bottom: 20px;
+}
+
+.Proyecto {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%; 
+    box-shadow: 0px 0px 10px #00A3FF;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+   
+}
+
+.Proyecto img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.Proyecto h3 {
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+
+.Proyecto p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.Proyecto:hover {
+    transform: scale(1.05);
+    color: #00A3FF;
+}
+.GitIgnore {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00A3FF;
+}
+
+.GitIgnore h2 {
+    color: #00A3FF;
+    text-shadow: 1px 1px 2px darkblue;
+    margin-bottom: 20px;
+}
+
+
+.GitIgnore p {
+    margin: 10px 0;
+}
+
+.GitIgnore code {
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
