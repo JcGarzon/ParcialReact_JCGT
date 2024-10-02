@@ -194,4 +194,48 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+.Habilidades {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  text-align: center;
+}
 
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.Habilidad {
+  display: none; /* Oculta todas las habilidades por defecto */
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Efecto de transición suave */
+  text-align: center;
+}
+
+.Habilidad.active {
+  display: block; /* Muestra la habilidad activa */
+  opacity: 1; /* Hace visible la habilidad activa */
+}
+
+.botones {
+  margin-top: 20px; /* Espacio entre el slider y los botones */
+}
+
+.boton {
+  background-color: transparent; /* Botón transparente */
+  border: 2px solid #00A3FF; /* Borde azul */
+  color: #00A3FF; /* Texto azul */
+  padding: 10px 15px; /* Relleno */
+  border-radius: 5px; /* Esquinas redondeadas */
+  margin: 0 10px; /* Espaciado entre botones */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.boton:hover {
+  background-color: #00A3FF; /* Color de fondo al pasar el mouse */
+  color: white; /* Cambia el color del texto al pasar el mouse */
+}

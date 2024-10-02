@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import Header from './Componentes/Header';
 import Perfil from './Componentes/Perfil';
-import Habilidades from './Componentes/Habilidades';
 import Proyectos from './Componentes/Proyectos';
+import HabilidadesSlider from './Componentes/HabilidadesSlider';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <main>
         <Perfil />
-        <Habilidades />
+        <HabilidadesSlider />
         <Proyectos />
 
       </main>
