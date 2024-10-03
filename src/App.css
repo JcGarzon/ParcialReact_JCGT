@@ -271,3 +271,52 @@ footer a:hover {
   text-decoration: underline;
   color: #007bff; /* Cambia a un azul más claro al pasar el mouse */
 }
+
+/* Estilos de la navbar */
+.navbar {
+  position: fixed; /* Fija la navbar en la parte superior */
+  top: 0; /* Posición desde la parte superior */
+  left: 0; /* Posición desde la izquierda */
+  width: 100%; /* Ancho completo */
+  background-color: #333; /* Color de fondo */
+  color: white; /* Color del texto */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  transition: background-color 0.3s; /* Transiciones suaves */
+  padding: 2px 0; /* Espaciado interno reducido aún más */
+}
+
+.container {
+  display: flex; /* Flexbox para centrar contenido */
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center; /* Alinear verticalmente */
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar */
+  padding: 0 20px; /* Espaciado interno */
+}
+
+.nav-links {
+  list-style: none; /* Quitar puntos de la lista */
+  display: flex; /* Disposición en fila */
+}
+
+.nav-links li {
+  margin: 0 5px; /* Espaciado entre elementos reducido */
+}
+
+.nav-links a {
+  color: white; /* Color de texto de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  padding: 2px 5px; /* Espaciado interno reducido */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+.nav-links a:hover {
+  background-color: #555; /* Color al pasar el mouse */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo cuando se hace scroll */
+.navbar.scrolled {
+  background-color: #222; /* Cambia el color al hacer scroll */
+}

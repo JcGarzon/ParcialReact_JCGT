@@ -25,7 +25,7 @@ const estudios = [
 
 const Estudios = () => {
     return (
-      <div className="Estudios">
+      <div className="Estudios" >
         <h2>Mis Estudios</h2>
           {estudios.map((estudio, index) => (
             <div key={index} className="estudio-item">
