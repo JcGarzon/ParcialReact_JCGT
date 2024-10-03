@@ -66,7 +66,7 @@ function App() {
         <Proyectos proyectos={proyectos2} nombre="Proyectos Corte #2" />
       </main>
       <footer>
-        <p>Parcial 1 EMW 2024-3 Julian Camilo Garzon Toro</p>
+        <p>Parcial 2 EMW 2024-3 Julian Camilo Garzon Toro</p>
         <p>Contacto: 
           <a href="https://www.linkedin.com/in/julian-camilo-garzon-toro-346949302/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
           <a href="https://github.com/JcGarzon" target="_blank" rel="noopener noreferrer">Github</a>
@@ -76,5 +76,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

@@ -3,16 +3,22 @@ import React from 'react';
 // Datos de ejemplo sobre tus estudios
 const estudios = [
   {
-    institucion: 'Universidad XYZ',
+    institucion: 'Universidad Autonoma De Occidente',
     titulo: 'Ingeniería Multimedia',
     año: '2021 - Presente',
     detalles: 'Cursando séptimo semestre',
   },
   {
-    institucion: 'Colegio ABC',
-    titulo: 'Bachillerato',
-    año: '2017 - 2020',
-    detalles: 'Graduado con honores',
+    institucion: 'Colegio San Francisco de Asis',
+    titulo: 'Bachiller Tecnico',
+    año: '2016 - 2020',
+    detalles: 'Tecnico en Desarrollo de Software',
+  },
+  {
+    institucion: 'Centro Cultural Colombo Americano',
+    titulo: 'Graduado del Programa Kid And Teens',
+    año: '2015 - 2019',
+    detalles: 'Programa de 480h de Idioma Extranjero Ingles',
   },
   // Agrega más estudios según sea necesario
 ];
