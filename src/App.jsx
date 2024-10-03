@@ -6,6 +6,7 @@ import Perfil from './Componentes/Perfil';
 import Proyectos from './Componentes/Proyectos';
 import HabilidadesSlider from './Componentes/HabilidadesSlider';
 import Estudios from './Componentes/Estudios';
+import Header2 from './Componentes/Header2';
 import P1 from './assets/P1.png';
 import P2 from './assets/P2.png';
 import P3 from './assets/p3.png';
@@ -59,7 +60,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Header />
+      <Header2 />
       <main>
         <Perfil />
         <Estudios />
