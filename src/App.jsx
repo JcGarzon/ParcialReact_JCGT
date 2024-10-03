@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Componentes/Navbar';
-import Header from './Componentes/Header';
+
 import Perfil from './Componentes/Perfil';
 import Proyectos from './Componentes/Proyectos';
 import HabilidadesSlider from './Componentes/HabilidadesSlider';
