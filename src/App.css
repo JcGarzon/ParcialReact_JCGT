@@ -4,9 +4,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%; /* Cambiado a 100% en lugar de 100vw */
+    width: 100%;
     min-height: 100vh;
-    overflow-x: hidden; /* Evitar desbordamiento horizontal */
+    overflow-x: hidden;
     font-family: "Poppins", sans-serif;
 }
 
@@ -20,9 +20,9 @@ body {
 
 .encabezado header img {
     width: 100%;
-    height: auto; /* Para que se ajuste al contenido */
-    object-fit: cover; /* Mantiene proporciones y rellena el contenedor */
-    position: relative; /* Cambiado a relative */
+    height: auto;
+    object-fit: cover;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -43,7 +43,7 @@ body {
     border-radius: 50%;
     max-width: 120px;
     height: auto;
-    position: absolute; /* Cambiado a relative */
+    position: absolute;
     top: -40px;
     left: 50%;
     transform: translateX(-50%);
@@ -69,43 +69,68 @@ body {
     margin: 10px 0 0;
 }
 
-/* Habilidades */
 .Habilidades {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-    gap: 20px;
-    justify-items: center;
-    text-align: center;
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
-    min-height: 300px; /* Altura mínima para evitar que se colapsen las filas */
+  text-align: center;
+  margin: 20px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habilidad {
+  display: none; /* Esconde todas las habilidades por defecto */
+  transition: opacity 0.5s ease; /* Transición suave al cambiar de habilidad */
+}
+
+.habilidad.active {
+  display: block; /* Solo muestra la habilidad activa */
+  opacity: 1; /* Asegura que se vea la habilidad activa */
 }
 
 .icono-habilidad {
-    display: block;
-    margin: 0 auto 10px auto;
-    width: 50px;
-    height: auto;
+  width: 50px; /* Ajusta el tamaño del icono según lo necesites */
+  height: 50px; /* Ajusta el tamaño del icono según lo necesites */
 }
 
-.Habilidad {
-    text-align: center;
+.habilidad-item {
+  margin: 10px 0;
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.Habilidad h3 {
-    color: #00A3FF;
-    text-shadow: 1px 1px 2px darkblue;
+.barra-progreso {
+  width: 100%; /* Asegura que la barra ocupe todo el ancho disponible */
+  background-color: #f0f0f0; /* Color de fondo de la barra */
+  border-radius: 5px; /* Bordes redondeados para la barra */
+  overflow: hidden; /* Evita que el contenido exceda el borde */
 }
 
-.Habilidad p {
-    line-height: 2;
-    margin: 5px 0;
+.progreso {
+  height: 20px; /* Altura de la barra de progreso */
+  background-color: #4e94f6; /* Color de la barra de progreso */
+  border-radius: 5px; /* Bordes redondeados para el progreso */
+  width: 0; /* Inicia en 0 para la animación */
+  transition: width 1s ease-in-out; /* Transición suave para el ancho */
 }
 
-.Habilidades h2 {
-    grid-column: span 2;
-    color: #00A3FF;
-    text-shadow: 1px 1px 2px darkblue;
+.botones {
+  margin-top: 20px; /* Espaciado superior para los botones */
+}
+
+.boton {
+  margin: 0 5px; /* Espaciado entre los botones */
+  padding: 10px 15px; /* Espaciado interno para los botones */
+  background-color: #007bff; /* Color de fondo de los botones */
+  color: white; /* Color del texto de los botones */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados para los botones */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.boton:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el mouse sobre el botón */
 }
 
 /* Proyectos */
@@ -167,28 +192,6 @@ body {
     color: #00A3FF;
 }
 
-.Habilidad.active {
-  display: block; /* Muestra la habilidad activa */
-  opacity: 1; /* Hace visible la habilidad activa */
-}
-.botones {
-  margin-top: 20px; /* Espacio entre el slider y los botones */
-}
-.boton {
-  background-color: transparent; /* Botón transparente */
-  border: 2px solid #00A3FF; /* Borde azul */
-  color: #00A3FF; /* Texto azul */
-  padding: 10px 15px; /* Relleno */
-  border-radius: 5px; /* Esquinas redondeadas */
-  margin: 0 10px; /* Espaciado entre botones */
-  cursor: pointer; /* Cambia el cursor al pasar el mouse */
-  transition: background-color 0.3s ease; /* Efecto de transición */
-}
-.boton:hover {
-  background-color: #00A3FF; /* Color de fondo al pasar el mouse */
-  color: white; /* Cambia el color del texto al pasar el mouse */
-}
-
 /* Footer */
 footer {
     background-color: #333;
@@ -210,22 +213,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-.Habilidades {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra horizontalmente */
-  text-align: center;
-}
-.slider {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.Habilidad {
-  display: none; /* Oculta todas las habilidades por defecto */
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* Efecto de transición suave */
-  text-align: center;
 }
