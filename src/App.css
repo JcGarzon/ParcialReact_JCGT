@@ -192,6 +192,49 @@ body {
     color: #00A3FF;
 }
 
+.Estudios {
+  margin: 20px auto; /* Centrar el componente en la página */
+  text-align: center; /* Alinea el texto al centro */
+  max-width: 800px; /* Define un ancho máximo para el componente */
+}
+
+.Estudios h2 {
+  color: #00A3FF; /* Color que coincide con tu esquema de colores */
+  text-shadow: 1px 1px 2px darkblue; /* Sombra para el título */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.estudio-item {
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 15px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espaciado inferior entre estudios */
+  background-color: #f9f9f9; /* Fondo claro */
+  box-shadow: 0px 4px 10px rgba(0, 163, 255, 0.5); /* Sombra azul */
+  transition: transform 0.3s ease; /* Transición suave para el hover */
+  width: 90%; /* Ancho relativo para mantener el tamaño más pequeño */
+  max-width: 500px; /* Máximo ancho para los items */
+  margin-left: auto; /* Centrar el item */
+  margin-right: auto; /* Centrar el item */
+}
+
+.estudio-item h3 {
+  margin: 0;
+  color: #333; /* Color de texto para el título del estudio */
+}
+
+.estudio-item p {
+  margin: 5px 0; /* Espaciado vertical entre párrafos */
+  color: #666; /* Color de texto más claro para detalles */
+}
+
+.estudio-item:hover {
+  transform: scale(1.02); /* Efecto de zoom al pasar el mouse */
+  background-color: #e6f7ff; /* Cambia el fondo al hacer hover */
+}
+
+
+
 /* Footer */
 footer {
     background-color: #333;

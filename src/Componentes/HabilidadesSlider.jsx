@@ -89,8 +89,8 @@ const HabilidadesSlider = () => {
         ))}
       </div>
       <div className="botones">
-        <button className="boton" onClick={handlePrev}>Anterior</button>
-        <button className="boton" onClick={handleNext}>Siguiente</button>
+        <button className="boton" onClick={handlePrev}>Blandas</button>
+        <button className="boton" onClick={handleNext}>Duras</button>
       </div>
     </div>
   );

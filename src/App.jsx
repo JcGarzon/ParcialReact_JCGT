@@ -4,11 +4,12 @@ import Header from './Componentes/Header';
 import Perfil from './Componentes/Perfil';
 import Proyectos from './Componentes/Proyectos';
 import HabilidadesSlider from './Componentes/HabilidadesSlider';
+import Estudios from './Componentes/Estudios';
 import P1 from './assets/P1.png';
 import P2 from './assets/P2.png';
 import P3 from './assets/p3.png';
-import P4 from './assets/P4.png'; // Asegúrate de tener esta imagen
-import P5 from './assets/P5.png'; // Asegúrate de tener esta imagen
+import P4 from './assets/P4.png'; 
+import P5 from './assets/P5.png'; 
 
 function App() {
   const proyectos1 = [
@@ -58,7 +59,9 @@ function App() {
       <Header />
       <main>
         <Perfil />
+        <Estudios />
         <HabilidadesSlider />
+        
         <Proyectos proyectos={proyectos1} nombre="Proyectos Corte #1" />
         <Proyectos proyectos={proyectos2} nombre="Proyectos Corte #2" />
       </main>
