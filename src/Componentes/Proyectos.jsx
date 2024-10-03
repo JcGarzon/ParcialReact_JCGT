@@ -3,7 +3,7 @@ import React from 'react';
 const Proyectos = ({ proyectos, nombre }) => {
   return (
     <div className="Proyectos">
-      <h2>{nombre}</h2> {/* Usar el prop nombre para el título */}
+      <h2>{nombre}</h2> {}
       <div className="Proyectos-container">
         {proyectos.map((proyecto, index) => (
           <a href={proyecto.link} target="_blank" rel="noopener noreferrer" key={index}>

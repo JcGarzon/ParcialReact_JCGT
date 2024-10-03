@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Datos de ejemplo sobre tus estudios
+
 const estudios = [
   {
     institucion: 'Universidad Autonoma De Occidente',
@@ -20,7 +20,7 @@ const estudios = [
     año: '2015 - 2019',
     detalles: 'Programa de 480h de Idioma Extranjero Ingles',
   },
-  // Agrega más estudios según sea necesario
+ 
 ];
 
 const Estudios = () => {

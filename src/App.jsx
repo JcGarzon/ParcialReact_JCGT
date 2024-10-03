@@ -37,7 +37,7 @@ function App() {
 
   const proyectos2 = [
     {
-      link: "https://github.com/otro-enlace/Proyecto4",
+      link: "https://github.com/JcGarzon/ClaseVirtual_Reupload",
       imagen: P4,
       titulo: "Proyecto 4: Clase Virtual",
       descripcion: "Descripción del nuevo proyecto"
