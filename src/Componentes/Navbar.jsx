@@ -21,10 +21,9 @@ const Navbar = () => {
       <div className="container">
         <h3 className="logo">GRZN</h3>
         <ul className="nav-links">
-          <li><a href="#estudios">Estudios</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="https://github.com/JcGarzon">GitHub</a></li>
+          <li><a href="https://www.youtube.com/@juliangarzon1930">Youtube</a></li>
+          <li><a href="https://www.linkedin.com/in/julian-camilo-garzon-toro-346949302/">Linkedin</a></li>
         </ul>
       </div>
     </nav>

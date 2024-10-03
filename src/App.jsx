@@ -11,6 +11,7 @@ import P2 from './assets/P2.png';
 import P3 from './assets/p3.png';
 import P4 from './assets/P4.png'; 
 import P5 from './assets/P5.png'; 
+import P6 from './assets/P6.png'; 
 
 function App() {
   const proyectos1 = [
@@ -43,7 +44,7 @@ function App() {
     },
     {
       link: "https://github.com/JcGarzon/Primera-Practica-React",
-      imagen: P5,
+      imagen: P6,
       titulo: "Proyecto 5: Contador React ",
       descripcion: "Primera Practica de React, ejercicio con contador"
     },
